@@ -18,11 +18,11 @@
 
 int computeArmstrong(int n)
 {
-    int remndr, out = 0;
+    int out = 0;
         
     while (n!= 0)                      //computing on loop whether the given number is an armstrong number or not
         {
-            remndr = n%10;
+           int remndr = n%10;
             out += remndr*remndr*remndr;
             n /= 10;
         }
