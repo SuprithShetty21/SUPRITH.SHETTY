@@ -5,7 +5,7 @@
 
     int main()
     {
-        int n, temp_n, remndr, out = 0;
+        int n, out = 0;
         printf("Enter a three digit integer: ");
         scanf("%d", &n);
 
@@ -18,15 +18,13 @@
 
 int computeArmstrong(int n)
 {
-    int temp_n, remndr, out = 0;
-       
-    temp_n = n;
-    
-    while (temp_n != 0)                      //computing on loop whether the given number is an armstrong number or not
+    int remndr, out = 0;
+        
+    while (n!= 0)                      //computing on loop whether the given number is an armstrong number or not
         {
-            remndr = temp_n%10;
+            remndr = n%10;
             out += remndr*remndr*remndr;
-            temp_n /= 10;
+            n /= 10;
         }
     
     return out;
